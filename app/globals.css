@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat+Brush&family=Dancing+Script:wght@400..700&family=Jaro:opsz@6..72&family=Mr+Dafoe&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat+Brush&family=Dancing+Script:wght@400..700&family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat+Brush&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Water+Brush&family=Yellowtail&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +19,123 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--background);
+  background: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+/* -<uniquifier> */
+.jaro {
+  font-family: "Jaro", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* font-size:40px */
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  /* font-size:16px */
+}
+
+.montserratMarketplace {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  /* font-size:16px */
+}
+
+.montserat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 800; */
+  font-style: normal;
+  /* font-size:16px */
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RegularBrush"; /* Must match the name in font-family usage */
+  src: url("/fonts/RegularBrush.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Momcake-Bold"; /* Must match the name in font-family usage */
+  src: url("/fonts/Momcake-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nord-Bold";
+  src: url("/fonts/Nord-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "newAcademy";
+  src: url("/fonts/NEWACADEMY.ttf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.regularBrush {
+  font-family: "RegularBrush", sans-serif; /* Use the correct name */
+}
+
+.momCake {
+  font-family: "Momcake-bold", sans-serif; /* Use the correct name */
+}
+
+.Nord-Bold {
+  font-family: "Nord-Bold", sans-serif;
+}
+
+@media (min-width: 321px) and (max-width: 424px) {
+  .esm-journey {
+    margin-top: 12px; /* Tailwind's `ml-16` */
+  }
+  .esm-courses {
+    margin-top: 24px;
+    margin-left: 44px;
+  }
+  .esm-carousel {
+    margin-left: 26px;
+  }
+}
+
+.scrolling-text-wrapper {
+  display: inline-flex;
+  white-space: nowrap;
+  position: relative;
+  min-width: 90%; /* Ensures it spans the full width of the parent */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
+
+.animate-scrollText {
+  animation: scrollText 30s linear infinite;
 }

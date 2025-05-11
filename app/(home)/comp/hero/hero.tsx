@@ -45,7 +45,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className=" relative border border-black ">
+    <div className=" relative border border-black " suppressHydrationWarning={true}>
        {/* <Image
         alt="home"
         src={about_us}

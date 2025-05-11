@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -8,21 +9,11 @@ import CourseFaq from "../../comp/course/courseFAQ";
 import RelatedCourse from "../../comp/course/relateCourse";
 import Button from "@/ui/reuseable_comp/Button";
 import { courseDetails } from "@/utils/homeData";
+import Link from "next/link";
 
 export const revalidate = 20;
 
-// type Props = {
-//   params: Promise<{ id: string }>;
-// };
 
-interface Course {
-  xitemid: string;
-  xitemcode: string;
-  xdesc: string;
-  xlongdesc: string;
-  xcat: string;
-  ximage: string;
-}
 interface CourseDetailPageProps {
   params: { id: number };
 }
@@ -36,7 +27,6 @@ const CourseDetailPage =  async({ params }: CourseDetailPageProps) => {
     class_timing: "Monday & Friday, 6:00 PM - 8:00 PM",
     // doubt_session: "Every Saturday, 7:00 PM - 8:00 PM",
   };
-
 
   const course = courseDetails.find(course => course.xitemid === Number(id));
 
@@ -64,9 +54,12 @@ const CourseDetailPage =  async({ params }: CourseDetailPageProps) => {
                       height={950}
                       className="object-contain w-full h-auto lg:h-[450px] uws:h-[750px] "
                     />
-                    <Button className=" bg-red-600 mx-auto w-full mt-4">
-                      Enroll Nowsss
+                  
+                  <Link href={`${course?.xdesc.toLowerCase() == 'video editing' ? '/courses' : '/instruction'}`}>
+                    <Button  className=" bg-red-600 mx-auto w-full mt-4 focus:outline-none focus:ring-0">
+                      {course?.xdesc.toLowerCase() === 'video editing' ? 'Not Available' : ' Enroll Now'}
                     </Button>
+                  </Link>
                   </div>
                 ) : (
                   <Image
@@ -78,6 +71,8 @@ const CourseDetailPage =  async({ params }: CourseDetailPageProps) => {
                   />
                 )}
               </div>
+             
+              
             </div>
 
             <div className="bg-red-600 text-white w-full md:w-full h-auto py-6 flex flex-col lg:flex-row justify-between items-end rounded-[18px]">
@@ -109,6 +104,7 @@ const CourseDetailPage =  async({ params }: CourseDetailPageProps) => {
                 <p className="text-[20px] md:text-[26px] text-black uws:text-[36px]">
                   Mastery
                 </p>
+                <p>price : {course?.xprice}</p>
               </div>
             </div>
           </div>

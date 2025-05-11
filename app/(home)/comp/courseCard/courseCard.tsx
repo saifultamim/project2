@@ -49,6 +49,27 @@ const router = useRouter()
           {course.xdesc}
         </div>
         <div className="flex justify-between mt-2">
+          <p className="text-[10px] md:text-[10px] lg:text-[16px] montserrat flex items-center line-through decoration-gray-500">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-xl mr-1"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M16.5 15.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+              <path d="M7 7a2 2 0 1 1 4 0v9a3 3 0 0 0 6 0v-.5"></path>
+              <path d="M8 11h6"></path>
+            </svg>
+            {Number(course?.xstdprice)?.toFixed(2)}
+          </p>
+        </div>
+        <div className="flex justify-between mt-2">
           <p className="text-[10px] md:text-[10px] lg:text-[16px] montserrat flex items-center">
             <svg
               stroke="currentColor"

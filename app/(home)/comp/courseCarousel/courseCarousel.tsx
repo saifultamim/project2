@@ -135,7 +135,7 @@ const CourseCarousel = ({
                   <div className="absolute bottom-0 left-0 right-0 xs:h-24 sm:h-20 md:h-48 lg:h-36 uws:h-56  bg-black blur opacity-60 border border-red-600"></div>
                 </div>
 
-                <div className="text-white mt-2 md:mt-4 lg:mt-4 flex flex-col justify-between h-[90px] md:h-36 lg:h-44">
+                <div className="text-white  md:mt-4 lg:mt-4 flex flex-col justify-between h-[90px] md:h-36 lg:h-44">
                   <p
                     className=" text-[14px] md:text-[30px] lg:text-[40px] uws:text-[50px] leading-none jaro"
                     title={`${courses?.[selectIndex]?.xdesc}`}
@@ -144,12 +144,46 @@ const CourseCarousel = ({
                       ? courses?.[selectIndex]?.xdesc.slice(0, 28) + " ..."
                       : courses?.[selectIndex]?.xdesc}
                   </p>
-
-                  {/* <p className="text-[10px]  mx:text-[16px] lg:text-[16px] uws:text-[20px] leading-none montserrat">
-                {courses?.[selectIndex]?.xdesc}
-              </p> */}
+                     <p className="text-[10px]  mx:text-[16px] lg:text-[16px] uws:text-[20px] leading-none montserrat line-through decoration-red-600 text-white flex md:mt-0 mt-1">
+                         <svg
+                              stroke="currentColor"
+                              fill="none"
+                              strokeWidth="2"
+                              viewBox="0 0 24 24"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="text-2xl"
+                              height="0.8em"
+                              width="0.8em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M16.5 15.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                              <path d="M7 7a2 2 0 1 1 4 0v9a3 3 0 0 0 6 0v-.5"></path>
+                              <path d="M8 11h6"></path>
+                            </svg>
+                {courses?.[selectIndex]?.xstdprice}
+              </p>
+                  <p className="text-[10px]  mx:text-[16px] lg:text-[16px] uws:text-[20px] leading-none montserrat text-white flex">
+                       <svg
+                              stroke="currentColor"
+                              fill="none"
+                              strokeWidth="2"
+                              viewBox="0 0 24 24"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="text-2xl"
+                              height="0.8em"
+                              width="0.8em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M16.5 15.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                              <path d="M7 7a2 2 0 1 1 4 0v9a3 3 0 0 0 6 0v-.5"></path>
+                              <path d="M8 11h6"></path>
+                            </svg>
+                {courses?.[selectIndex]?.xmrp}
+              </p>
                   <button className="lg:w-[262px] h-[40px] uws:h-[60px] uws:text-[30px] rounded-[6px]  bg-[#ED1C24]  jaro w-full">
-                    Enroll Now  ssss  {typeof(courses?.[selectIndex]?.id)} 
+                    Course Details
                   </button>
                 </div>
               </Link>
@@ -232,7 +266,27 @@ p-1 md:p-4 lg:p-4  rounded-[10px] lg:rounded-[18px] uws:w-[450px]  cursor-pointe
                             : course.xdesc}
                         </Link>
 
-                        <div className="flex justify-between mt-2">
+                        <div className="flex justify-between mt-2 ">
+                          <p className="text-[10px] md:text-[10px] lg:text-[16px] montserrat flex items-center line-through decoration-gray-500">
+                            <svg
+                              stroke="currentColor"
+                              fill="none"
+                              strokeWidth="2"
+                              viewBox="0 0 24 24"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              className="text-2xl"
+                              height="0.8em"
+                              width="0.8em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M16.5 15.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                              <path d="M7 7a2 2 0 1 1 4 0v9a3 3 0 0 0 6 0v-.5"></path>
+                              <path d="M8 11h6"></path>
+                            </svg>
+
+                            <span>{Number(course?.xstdprice)}</span>
+                          </p> 
                           <p className="text-[10px] md:text-[10px] lg:text-[16px] montserrat flex items-center">
                             <svg
                               stroke="currentColor"
@@ -251,7 +305,7 @@ p-1 md:p-4 lg:p-4  rounded-[10px] lg:rounded-[18px] uws:w-[450px]  cursor-pointe
                               <path d="M8 11h6"></path>
                             </svg>
 
-                            <span>{Number(course?.xmrp)?.toFixed(2)}</span>
+                            <span>{Number(course?.xmrp)}</span>
                           </p>
                         </div>
                       </div>
@@ -300,6 +354,25 @@ p-1 md:p-4 lg:p-4 bg-white rounded-[10px] lg:rounded-[18px] uws:w-[450px] cursor
                         </Link>
 
                         <div className="flex justify-between mt-2">
+                              <p className="text-[10px] md:text-[10px] lg:text-[16px] montserrat flex items-center line-through decoration-gray-500">
+                            <svg
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-width="2"
+                              viewBox="0 0 24 24"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              className="text-2xl"
+                              height="0.8em"
+                              width="0.8em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M16.5 15.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                              <path d="M7 7a2 2 0 1 1 4 0v9a3 3 0 0 0 6 0v-.5"></path>
+                              <path d="M8 11h6"></path>
+                            </svg>
+                            {Number(course?.xstdprice)}
+                          </p>
                           <p className="text-[10px] md:text-[10px] lg:text-[16px] montserrat flex items-center">
                             <svg
                               stroke="currentColor"
@@ -317,11 +390,8 @@ p-1 md:p-4 lg:p-4 bg-white rounded-[10px] lg:rounded-[18px] uws:w-[450px] cursor
                               <path d="M7 7a2 2 0 1 1 4 0v9a3 3 0 0 0 6 0v-.5"></path>
                               <path d="M8 11h6"></path>
                             </svg>
-                            {Number(course?.xmrp)?.toFixed(2)}
+                            {Number(course?.xmrp)}
                           </p>
-                          {/* <p className="text-[10px] md:text-[10px] lg:text-[15px] montserrat">
-                            {course.xstdprice}
-                          </p> */}
                         </div>
                       </div>
                     </div>
@@ -366,7 +436,26 @@ p-1 md:p-4 lg:p-4 bg-white rounded-[10px] lg:rounded-[18px] uws:w-[450px] cursor
                           : course.xdesc}
                       </Link>
 
-                      <div className="flex justify-between mt-2">
+                      <div className="flex justify-between ">
+                          <p className="text-[10px] md:text-[10px] lg:text-[16px] montserrat flex items-center line-through decoration-gray-500">
+                          <svg
+                            stroke="currentColor"
+                            fill="none"
+                            strokeWidth="2"
+                            viewBox="0 0 24 24"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="text-lg"
+                            height="0.8em"
+                            width="0.8em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M16.5 15.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                            <path d="M7 7a2 2 0 1 1 4 0v9a3 3 0 0 0 6 0v-.5"></path>
+                            <path d="M8 11h6"></path>
+                          </svg>
+                          {Number(course?.xstdprice)}
+                        </p>
                         <p className="text-[10px] md:text-[10px] lg:text-[16px] montserrat flex items-center">
                           <svg
                             stroke="currentColor"
@@ -384,11 +473,7 @@ p-1 md:p-4 lg:p-4 bg-white rounded-[10px] lg:rounded-[18px] uws:w-[450px] cursor
                             <path d="M7 7a2 2 0 1 1 4 0v9a3 3 0 0 0 6 0v-.5"></path>
                             <path d="M8 11h6"></path>
                           </svg>
-                          {Number(course?.xmrp)?.toFixed(2)}
-                        </p>
-
-                        <p className="text-[10px] md:text-[10px] lg:text-[15px] montserrat">
-                          {course.xstdprice}
+                          {Number(course?.xmrp)}
                         </p>
                       </div>
                     </div>

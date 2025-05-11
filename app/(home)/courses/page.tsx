@@ -3,85 +3,12 @@ import coursesBanner from "@/public/images/home/courses/courses.png";
 import Image from "next/image";
 import CourseCard from "../comp/courseCard/courseCard";
 import { courses } from "@/utils/homeData";
-// import { getCourses } from "@/utils/getCourses";
-// import CourseCard from "./CourseCard";
+
 
 export const revalidate = 20;
 
 const page = async () => {
-//   const courses = await getCourses();
-// const courses = [
-//     {
-//       xitemcode: "CSE101",
-//       xdesc: "Introduction to Computer Science",
-//       ximage: "/images/home/courses/digital_marketing2.png",
-//       xstdprice: "5000",
-//       xmrp: 6000,
-//     },
-//     {
-//       xitemcode: "WD102",
-//       xdesc: "Full Stack Web Development",
-//       ximage: "/images/home/courses/digital_marketing2.png",
-//       xstdprice: "8000",
-//       xmrp: 10000,
-//     },
-//     {
-//       xitemcode: "DSA103",
-//       xdesc: "Data Structures and Algorithms",
-//       ximage: "/images/home/courses/digital_marketing2.png",
-//       xstdprice: "7000",
-//       xmrp: 8500,
-//     },
-//     {
-//       xitemcode: "AI104",
-//       xdesc: "Artificial Intelligence Basics",
-//       ximage: "/images/home/courses/digital_marketing2.png",
-//       xstdprice: "9000",
-//       xmrp: 11000,
-//     },
-//     {
-//       xitemcode: "ML105",
-//       xdesc: "Machine Learning with Python",
-//       ximage: "/images/home/courses/digital_marketing2.png",
-//       xstdprice: "9500",
-//       xmrp: 12000,
-//     },
-//     {
-//       xitemcode: "DB106",
-//       xdesc: "Database Management Systems",
-//       ximage: "/images/home/courses/digital_marketing2.png",
-//       xstdprice: "6000",
-//       xmrp: 7500,
-//     },
-//     {
-//       xitemcode: "UIUX107",
-//       xdesc: "UI/UX Design Fundamentals",
-//       ximage: "/images/home/courses/digital_marketing2.png",
-//       xstdprice: "5500",
-//       xmrp: 7000,
-//     },
-//     {
-//       xitemcode: "SEC108",
-//       xdesc: "Cyber Security for Beginners",
-//       ximage: "/images/home/courses/digital_marketing2.png",
-//       xstdprice: "10000",
-//       xmrp: 13000,
-//     },
-//     {
-//       xitemcode: "CLOUD109",
-//       xdesc: "Cloud Computing with AWS",
-//       ximage: "/images/home/courses/digital_marketing2.png",
-//       xstdprice: "8500",
-//       xmrp: 10500,
-//     },
-//     {
-//       xitemcode: "BLOCK110",
-//       xdesc: "Blockchain and Cryptocurrency",
-//       ximage: "/images/home/courses/digital_marketing2.png",
-//       xstdprice: "12000",
-//       xmrp: null,
-//     },
-//   ];
+
   return (
     <div className="relative">
       <Image

@@ -39,13 +39,16 @@ const Hero = () => {
   //   setFilteredCourses(filtered);
   // }, 300);
   const images = [
-    "/images/hero/img1.webp",
     "/images/hero/img2.webp",
-    "/images/hero/img1.webp",
+    "/images/hero/img3.webp",
+     "/images/hero/img5.webp",
+     "/images/hero/img4.webp",
+     "/images/hero/img1.webp",
+     "/images/hero/img6.webp",  
   ];
 
   return (
-    <div className=" relative border border-black " suppressHydrationWarning={true}>
+    <div className=" relative  lg:mb-0 mb-60" suppressHydrationWarning={true}>
        {/* <Image
         alt="home"
         src={about_us}
@@ -66,14 +69,14 @@ const Hero = () => {
         <div className="bg-gradient-to-b from-violet to-magenta text-white px-4 sm:px-6 md:px-12 py-6 sm:py-8 md:py-10 text-center rounded-lg shadow-lg">
           <div className="text-start">
             <h1 className="lg:text-4xl  md:text-[32px] text-xl  font-extrabold font-newAcademy leading-tight">
-              Kick-Start Your Business
+             “Master Coding. Build Real Skills. Transform Your Future.”
             </h1>
             <h2 className="lg:text-base md:text-lg text-sm font-light font-montserrat mt-2">
-              LET YOUR BUSINESS HAVE A VOICE FOR ITSELF
+              Hands-on coding courses with expert mentorship.
             </h2>
 
             <div className="flex flex-wrap lg:gap-4 md:gap-3 gap-2 bg-white w-fit py-2 px-6 sm:px-10 rounded-xl mt-4">
-              {["VIDEO", "GRAPHICS", "ANIMATION", "UI/UX", "VOICEOVER"].map(
+              {["DSA", "WEB DEVELOPMENT", "RESEARCH WORKSHOP", "VIDOE EDITING"].map(
                 (item) => (
                   <div
                     key={item}

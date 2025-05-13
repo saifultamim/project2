@@ -21,7 +21,7 @@ const Navbar = async () => {
   return (
     <nav className="bg-black text-white fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 lg:px-12 py-4 jaro">
       {/* Logo Section */}
-      <Link href="/">
+      <Link href="/" className='font-newAcademy md:text-3xl text-xl text-white'>
         {/* <Image
           alt="logo"
           src="/images/logo/app-logo.png"
@@ -29,7 +29,7 @@ const Navbar = async () => {
           height={42}
           quality={95}
         /> */}
-        brandname
+     CodeCamp IT
       </Link>
 
       {/* Desktop Menu */}

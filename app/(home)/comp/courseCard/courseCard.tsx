@@ -66,7 +66,7 @@ const router = useRouter()
               <path d="M7 7a2 2 0 1 1 4 0v9a3 3 0 0 0 6 0v-.5"></path>
               <path d="M8 11h6"></path>
             </svg>
-            {Number(course?.xstdprice)?.toFixed(2)}
+            {Number(course?.xstdprice)}
           </p>
         </div>
         <div className="flex justify-between mt-2">
@@ -87,7 +87,7 @@ const router = useRouter()
               <path d="M7 7a2 2 0 1 1 4 0v9a3 3 0 0 0 6 0v-.5"></path>
               <path d="M8 11h6"></path>
             </svg>
-            {Number(course?.xmrp)?.toFixed(2)}
+            {Number(course?.xmrp)}
           </p>
         </div>
       </div>

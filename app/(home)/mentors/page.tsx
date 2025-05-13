@@ -3,10 +3,7 @@ import React from "react";
 import mentors_img from "@/public/images/home/mentors/mentors2.png";
 import mentors_header from "@/public/images/home/mentors/mentors.png";
 import Link from "next/link";
-
-
-// import noImageSvg from "@/public/noUser.svg";
-
+import { FcManager } from "react-icons/fc";
 
 const public_mentor_image_path = process.env.NEXT_PUBLIC_FILE_PATH_TEACHER!;
 export type Mentor = {
@@ -14,65 +11,62 @@ export type Mentor = {
     xteachername: string;
     xexpartarea: string;
     xsortindex: number;
-    ximage: string;
-    xowndesc: string;
+    ximage?: string;
+    xowndesc?: string;
     xeducation: string;
+    edu?:string,
   
   }
 const mentors: Mentor[] = [
     {
       xteacher: 101,
-      xteachername: "Dr. Ahsan Habib",
-      xexpartarea: "Machine Learning, AI",
+      xteachername: "Tanzib Mahammad",
+      xexpartarea: "Research Workshop & DSA",
       xsortindex: 1,
-      ximage: "/images/home/mentors/mentors.png",
-      xowndesc: "A passionate AI researcher with 10+ years of experience in Machine Learning and Deep Learning.",
+      // ximage: "/images/home/mentors/mentors.png",
+      // xowndesc: "A passionate AI researcher with 10+ years of experience in Machine Learning and Deep Learning.",
+      edu:"CSE,AIUB",
       xeducation: "Ph.D. in Artificial Intelligence, MIT",
     },
     {
       xteacher: 102,
-      xteachername: "Sadia Rahman",
+      xteachername: "Sowrov Ahmed",
       xexpartarea: "Full Stack Web Development",
       xsortindex: 2,
-      ximage: "/images/home/mentors/mentors.png",
-      xowndesc: "Experienced full-stack developer skilled in MERN and Django frameworks.",
+      // ximage: "/images/home/mentors/mentors.png",
+      // xowndesc: "Experienced full-stack developer skilled in MERN and Django frameworks.",
+      edu:"CSE,AIUB",
       xeducation: "B.Sc. in Computer Science, BUET",
     },
     {
       xteacher: 103,
-      xteachername: "Md. Rafiq Hasan",
-      xexpartarea: "Cybersecurity, Ethical Hacking",
+      xteachername: "MD.Shaiful Islam",
+      xexpartarea: "Full Stack Web Development",
       xsortindex: 3,
-      ximage: "/images/home/mentors/mentors.png",
-      xowndesc: "Certified Ethical Hacker (CEH) with expertise in penetration testing and digital forensics.",
+      // ximage: "/images/home/mentors/mentors.png",
+      // xowndesc: "Certified Ethical Hacker (CEH) with expertise in penetration testing and digital forensics.",
+      edu:"CSE,AIUB",
       xeducation: "M.Sc. in Cybersecurity, Stanford University",
     },
     {
       xteacher: 104,
-      xteachername: "Nusrat Jahan",
-      xexpartarea: "UI/UX Design",
+      xteachername: "Nazrul Islam",
+      xexpartarea: "Digital Electronics & Logic Design",
       xsortindex: 4,
-      ximage: "/images/home/mentors/mentors.png",
-      xowndesc: "Creative UI/UX designer with 8 years of experience in product design and user experience.",
+      // ximage: "/images/home/mentors/mentors.png",
+      // xowndesc: "Creative UI/UX designer with 8 years of experience in product design and user experience.",
+      edu:"EEE,AIUB",
       xeducation: "B.Des in Graphic Design, University of Dhaka",
     },
-    {
+  {
       xteacher: 105,
-      xteachername: "Tanvir Ahmed",
-      xexpartarea: "Data Science, Big Data",
-      xsortindex: 5,
-      ximage: "/images/home/mentors/mentors.png",
-      xowndesc: "Expert in data analytics and big data technologies like Hadoop, Spark, and SQL.",
-      xeducation: "M.Sc. in Data Science, Harvard University",
-    },
-    {
-      xteacher: 106,
-      xteachername: "Farzana Kabir",
-      xexpartarea: "Cloud Computing, DevOps",
-      xsortindex: 6,
-      ximage: "/images/home/mentors/mentors.png",
-      xowndesc: "AWS Certified Cloud Architect with extensive experience in Kubernetes and Docker.",
-      xeducation: "B.Sc. in Software Engineering, NSU",
+      xteachername: "Rakibul Islam",
+      xexpartarea: "Video Editing",
+      xsortindex: 4,
+      // ximage: "/images/home/mentors/mentors.png",
+      // xowndesc: "Creative UI/UX designer with 8 years of experience in product design and user experience.",
+      edu:"CSE,AIUB",
+      xeducation: "B.Des in Graphic Design, University of Dhaka",
     },
   ];
 
@@ -123,22 +117,34 @@ const page = async () => {
                     className="rounded-full object-cover h-28 sm:h-32 md:h-36 lg:h-72 uws:h-[400px]   uws:w-full xs:-mt-4 sm:-mt-3 md:-mt-4 lg:-mt-10 uws:-mt-5"
                   />
                 ) : (
-                  <Image
-                    src={mentors_img}
-                    alt="Mentor Image"
-                    width={1000}
-                    height={200}
-                    className="rounded-full object-cover w-full"
-                  />
+                  // <Image
+                  //   src={mentors_img}
+                  //   alt="Mentor Image"
+                  //   width={1000}
+                  //   height={200}
+                  //   className="rounded-full object-cover w-full"
+                  // />
+                  <FcManager className=' bg-red-600 rounded-full object-cover w-full h-full '/>
                 )}
               </div>
             </div>
             <h3 className="text-black  md:text-[22px] lg:text-[36px] mt-4 lg:mt-8 uws:text-[50px] jaro leading-tight">
               {mentor?.xteachername}
             </h3>
+             <p
+              className="text-black text-[11px] md:text-[13px] lg:text-[16px] uws:text-[24px] montserrat leading-none"
+            >
+              Instructor
+            </p>
             <p
               dangerouslySetInnerHTML={{
                 __html: mentor?.xexpartarea as string,
+              }}
+              className="text-black text-[11px] md:text-[13px] lg:text-[16px] uws:text-[24px] montserrat leading-none"
+            ></p>
+             <p
+              dangerouslySetInnerHTML={{
+                __html: mentor?.edu as string,
               }}
               className="text-black text-[11px] md:text-[13px] lg:text-[16px] uws:text-[24px] montserrat leading-none"
             ></p>

@@ -43,7 +43,7 @@ const contactUs = [
 <main className="">
 
 
-  <section className="w-10/12  mx-auto flex flex-col lg:flex-row gap-10 py-12 bg-zinc-200">
+  <section className="w-10/12  mx-auto flex flex-col lg:flex-row gap-10 py-12">
     <section className="w-full  ">
       <div className="mb-8 lg:mb-0 lg:py-5">
         {contactUs?.map((params, idx) => (
@@ -60,7 +60,7 @@ const contactUs = [
     </section>
 
     <section className="w-full ">
-      <h4 className="text-3xl font-semibold mb-6 text-center lg:text-left animate-fade-in jaro">Get in Touch</h4>
+      <h4 className="text-3xl font-semibold mb-6 text-center lg:text-left animate-fade-in jaro text-red-600">Get in Touch</h4>
       <form
         onSubmit={handleSubmit}
         className="w-full flex flex-col gap-6 bg-white p-8 rounded-lg shadow-lg animate-zoom-in"
@@ -76,7 +76,7 @@ const contactUs = [
             onChange={handleChange}
             type="text"
             value={formData.name}
-            className='w-full px-4 py-2 rounded-md focus:outline-none focus:border-blue-600 bg-violet-100'
+            className='w-full px-4 py-2 border border-slate-200 rounded-md focus:outline-none focus:border-blue-600 bg-violet-100'
           />
         </div>
 
@@ -91,7 +91,7 @@ const contactUs = [
             onChange={handleChange}
             type="email"
             value={formData.email}
-            className='w-full px-4 py-2 rounded-md focus:outline-none focus:border-blue-600 bg-violet-100'
+            className='w-full px-4 py-2 border border-slate-200 rounded-md focus:outline-none focus:border-blue-600 bg-violet-100'
             required
             />
         </div>
@@ -106,7 +106,7 @@ const contactUs = [
             onChange={handleChange}
             type="text"
             value={formData.phone}
-            className='w-full px-4 py-2 rounded-md focus:outline-none focus:border-blue-600 bg-violet-100'
+            className='w-full px-4 py-2 border border-slate-200 rounded-md focus:outline-none focus:border-blue-600 bg-violet-100'
             required
             />
         </div>
@@ -118,7 +118,7 @@ const contactUs = [
           <textarea
             name="message"
             placeholder='Write your message here...'
-            className="w-full px-4 py-2 rounded-md focus:border-blue-600  focus:outline-none transition bg-violet-100"
+            className="w-full px-4 py-2 rounded-md border border-slate-200 focus:border-blue-600  focus:outline-none transition bg-violet-100"
             onChange={handleChange}
             value={formData.message}
             rows={6}

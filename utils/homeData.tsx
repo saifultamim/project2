@@ -6,34 +6,34 @@ export const courses = [
     xitemcode: "DB103",
     xdesc: "Data Structure & Algorithom",
     ximage: "/images/home/courses/algorithom.png",
-    xstdprice: "6000",
-    xmrp: 7500,
+    xstdprice: "10000",
+    xmrp: 6500,
   },
 
    {
     id: 2,
     xitemcode: "DB106",
     xdesc: "Web Development",
-    ximage: "/images/home/courses/algorithom.png",
-    xstdprice: "60050",
-    xmrp: 745500,
+    ximage: "/images/home/courses/web.jpg",
+    xstdprice: "7000",
+    xmrp: 4500,
   },
   {
     id: 3,
     xitemcode: "DSA103",
     xdesc: "Research Workshop",
-    ximage: "/images/home/courses/pythonResearch.jpg",
-    xstdprice: "7000",
-    xmrp: 85500,
+    ximage: "/images/home/courses/researchWorkshop.jpg",
+    xstdprice: "15000",
+    xmrp: 10000,
   },
 
     {
     id: 4,
     xitemcode: "CSE103",
     xdesc: "Video Editing",
-    ximage: "/images/home/courses/pythonResearch.jpg",
-    xstdprice: "7000",
-    xmrp: 85500,
+    ximage: "/images/home/courses/videoEditing.jpg",
+    xstdprice: "7500",
+    xmrp: 4000,
   },
 ];
 
@@ -42,7 +42,7 @@ export const courseDetails = [
     xitemid: 1,
     xitemcode: "CSE105",
     xdesc: "Data Structure & Algorithom",
-    xprice:9200,
+    xprice:6500,
     xlongdesc:
       "",
     xcat: "Security",
@@ -154,11 +154,11 @@ export const courseDetails = [
     xitemid: 2,
     xitemcode: "CSE105",
     xdesc: "Web development",
-    xprice:9200,
+    xprice:4500,
     xlongdesc:
       "",
     xcat: "Security",
-    ximage: "/images/home/courses/algorithom.png",
+    ximage: "/images/home/courses/web.jpg",
     learningOutCome: {
       whatYouLearn: [
       {details: (<><span className='text-2xl text-red-600 font-bold'>JavaScript & TypeScript Fundamentals</span></>)},
@@ -229,11 +229,11 @@ export const courseDetails = [
     xitemid: 3,
     xitemcode: "DSA103",
     xdesc: "Research Workshop",
-    xprice:5000,
+    xprice:10000,
     xlongdesc:
       "",
     xcat: "Data Science",
-    ximage: "/images/home/courses/pythonResearch.jpg",
+    ximage: "/images/home/courses/researchWorkshop.jpg",
     learningOutCome: {
       whatYouLearn: [
         { details: "Foundations of Research,Differences between qualitative, quantitative, and mixed methods" },
@@ -245,8 +245,8 @@ export const courseDetails = [
         { details: "Understand basic machine learning concepts" },
       ],
       requirements: [
-        { details: "basic knowledge of any programming language" },
-        { details: "python is plus point" },
+        { details: "Basic knowledge of any programming language" },
+        { details: "Python is plus point" },
       ],
     },
     expectations: [
@@ -273,11 +273,11 @@ export const courseDetails = [
     xitemid: 4,
     xitemcode: "CSE103",
     xdesc: "Video Editing",
-    xprice:5000,
+    xprice:4000,
     xlongdesc:
       "",
     xcat: "video editing",
-    ximage: "/images/home/courses/pythonResearch.jpg",
+    ximage: "/images/home/courses/videoEditing.jpg",
     learningOutCome: {
       whatYouLearn: [
       

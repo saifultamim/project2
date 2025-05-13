@@ -80,10 +80,11 @@ const CourseDetailPage =  async({ params }: CourseDetailPageProps) => {
                 {/* <p className='bg-black px-4 py-2 w-fit montserat font-semibold text-[16px] md:text-[20px] rounded-tr-[12px] rounded-br-[12px] uws:text-[30px]'>course time</p> */}
                 
                  <div className='bg-black px-4 py-2 w-fit montserat font-semibold  rounded-tr-[12px] rounded-br-[12px] uws:text-[30px] mb-2'>
-                  <p className='text-[16px] md:text-[20px]'>course time</p>
+                  {/* <p className='text-[16px] md:text-[20px]'>course time</p> */}
                     {/* <p ><span className='text-red-600'>Start Date : </span>{ content.start_date}</p> */}
                     <p><span className='text-red-600'>Class time :</span> { content. class_timing}</p>
                     {/* <p><span className='text-red-600'>Session :</span> { content.doubt_session}</p> */}
+                     <p><span className='text-red-600'>Class duration :</span>6-8 weeks</p>
                   </div>
                
                 <p className="bg-black px-4 py-2 w-fit montserat font-semibold text-[16px] md:text-[20px] rounded-tr-[12px] rounded-br-[12px] uws:text-[30px]">
@@ -104,7 +105,7 @@ const CourseDetailPage =  async({ params }: CourseDetailPageProps) => {
                 <p className="text-[20px] md:text-[26px] text-black uws:text-[36px]">
                   Mastery
                 </p>
-                <p>price : {course?.xprice}</p>
+                <p className='font-semibold'>Price : {course?.xprice}</p>
               </div>
             </div>
           </div>

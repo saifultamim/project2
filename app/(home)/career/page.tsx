@@ -70,7 +70,7 @@ export const news_letter_data = [
   
 const page = () => {
     return (
-        <div className="relative mx-auto bg-white">
+        <div className="relative mx-auto">
         <Image
                 alt='success_story' 
                 src={news_letter}
@@ -83,8 +83,9 @@ const page = () => {
                <p className="">career</p>
                 </div>
                         
-                        <div>
-                            <p>this is career page</p>
+                               <div className=" py-8 px-4 rounded mt-16">
+            <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Available Vacancies</h1>
+              <p className="text-center text-red-600 text-xl font-bold">No Vacancies Available...</p>
                         </div>
 
                 </div>

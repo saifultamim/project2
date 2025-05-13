@@ -18,10 +18,9 @@ const Footer = () => {
             width={169}
             className="uws:w-96"
           /> */}
-          brandname
+        <span className='text-xl font-newAcademy text-magenta'>CodeCamp IT</span>
           <p className="w-[306px]  leading-[16.9px] uws:leading-[24px] text-[14px] uws:text-[24px] inter mt-2">
-            At MentorsIT, we prioritize hands-on learning, guided by experienced
-            mentors who bring real-world insights into every class.
+           At<span className='font-newAcademy text-lg m-3 text-magenta'>CodeCamp IT</span>, we emphasize practical, hands-on learning, with expert mentors who provide real-world perspectives in each lesson.
           </p>
           <div className="flex mt-5 gap-4">
             {images1.map((params, idx) => (

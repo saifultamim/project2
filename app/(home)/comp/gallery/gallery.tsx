@@ -1,8 +1,8 @@
 import React from "react";
-import home_gallery_1 from "@/public/images/home/home_gallery/home_gallery_1.png";
-import home_gallery_2 from "@/public/images/home/home_gallery/home_gallery_2.png";
-import home_gallery_3 from "@/public/images/home/home_gallery/home_gallery_3.png";
-import home_gallery_4 from "@/public/images/home/home_gallery/home_gallery_4.png";
+import home_gallery_1 from "@/public/images/home/home_gallery/home_gallery_5.jpeg";
+import home_gallery_2 from "@/public/images/home/home_gallery/home_gallery_6.jpeg";
+import home_gallery_3 from "@/public/images/home/home_gallery/home_gallery_7.jpeg";
+import home_gallery_4 from "@/public/images/home/home_gallery/home_gallery_8.jpeg";
 import Image from "next/image";
 const gallery = [
   { id: 1, img: home_gallery_1 },

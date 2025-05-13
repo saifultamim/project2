@@ -193,7 +193,7 @@ const MobileMenu = ({ courses }: any) => {
 
           {/* Other Links */}
           <Link
-            href="/"
+            href="/success-story"
             className={`text-lg hover:bg-gray-700 px-6 py-2 ${
               color == "successStory" ? "text-red-600" : "text-white"
             }`}
@@ -206,7 +206,7 @@ const MobileMenu = ({ courses }: any) => {
           </Link>
 
           <Link
-            href="/"
+            href="/career"
             className={`text-lg hover:bg-gray-700 px-6 py-2 ${
               color == "career" ? "text-red-600" : "text-white"
             }`}
@@ -218,13 +218,18 @@ const MobileMenu = ({ courses }: any) => {
             CAREER
           </Link>
         
-            <Link
-              href="/login"
-              className="bg-[#ED1C24] px-4 py-2 rounded text-white hover:bg-red-600 text-[18px] 
-              uws:text-[28px] ml-6"
-            >
-              Student Log In
-            </Link>
+           <Link
+            href="/contact"
+            className={`text-lg hover:bg-gray-700 px-6 py-2 ${
+              color == "contact" ? "text-red-600" : "text-white"
+            }`}
+            onClick={() => {
+              closeDropdowns();
+              handleColorChange("contact");
+            }}
+          >
+            CONTACT
+          </Link>
       
         </div>
       )}

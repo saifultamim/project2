@@ -202,12 +202,12 @@ const Menu = ({ courses }: any) => {
       >
        CONTACT
       </Link>
-        <Link
+        {/* <Link
           href="/login"
           className="bg-[#ED1C24] px-4 py-2 rounded text-white hover:bg-red-600 text-[18px] uws:text-[28px]"
         >
           Log In
-        </Link>
+        </Link> */}
     
     </div>
   );

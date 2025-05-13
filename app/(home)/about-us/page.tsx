@@ -4,12 +4,11 @@ import Image from "next/image";
 import FutureCareer from "../comp/futureCareer/futureCareer";
 import WhyUs from "../comp/wyUs/whyUs";
 
-
 const desc = [
   {
     title: "Our Vision",
     slug: "vision",
-    desc: "To establish the excellence and reputation of Bangladesh in the smart labor market of the world through preparing the countries large educated population suitable for thecompetitive world in the IT sector.",
+    desc: "To position Bangladesh as a leading nation in the global smart labor market by equipping its vast educated population with the skills needed to compete effectively in the IT sector.",
     list: [],
   },
   {
@@ -17,11 +16,11 @@ const desc = [
     slug: "mission",
     desc: "",
     list: [
-      "To conduct IT related training programs across the countrythrough online and offline medium at low cost.",
-      "To avail necessary supports to the students to make themproficient in their specific subjects.",
-      "To provide special supports and guidance for building abetter career at the end of the courses.",
-      "To take special initiatives to popularize IT skills and careersin deprived and remote areas.",
-      "To conduct appropriate activities to create skilled serviceproviders for the local and international labor markets, as wellas, successful entrepreneurs in the IT sector.",
+      " Organizing affordable IT training programs nationwide, accessible through both online and offline platforms.",
+      "Providing essential academic support to help students gain expertise in their chosen fields.",
+      "Offering dedicated career guidance and assistance to help learners build a strong professional future after completing their courses.",
+      "Launching focused efforts to promote IT education and career awareness in disadvantaged and remote communities.",
+      "Carrying out strategic initiatives to develop skilled professionals for both local and global job markets, while also encouraging entrepreneurship in the IT sector.",
     ],
   },
 ];

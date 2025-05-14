@@ -15,7 +15,7 @@ export const courses = [
     xitemcode: "DB106",
     xdesc: "Web Development",
     ximage: "/images/home/courses/web.jpg",
-    xstdprice: "7000",
+    xstdprice: "8500",
     xmrp: 4500,
   },
   {
@@ -32,7 +32,7 @@ export const courses = [
     xitemcode: "CSE103",
     xdesc: "Video Editing",
     ximage: "/images/home/courses/videoEditing.jpg",
-    xstdprice: "7500",
+    xstdprice: "7000",
     xmrp: 4000,
   },
 ];

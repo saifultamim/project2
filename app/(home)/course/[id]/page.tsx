@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import courseBanner from "@/public/images/home/courses/course.png";
+import courseBanner from "@/public/images/home/courses/courses.png";
 import ExpectationsOverview from "../../comp/course/expectationsOverview";
 import LearningOutcome from "../../comp/course/learningOutcome";
 import CourseFaq from "../../comp/course/courseFAQ";
@@ -33,17 +33,26 @@ const CourseDetailPage =  async({ params }: CourseDetailPageProps) => {
   return (
     <div className="mb-10 sm:mb-10 md:mb-20 lg:mb-0 exl:mb-16 uws:mb-28">
       <div className="relative bg-black ">
-        <Image
+        {/* <Image
           alt="course"
           src={courseBanner}
           width={1000}
           height={200}
           className="w-full h-[200px] xs:h-[300px] md:h-[453px] lg:h-[453px] exl:h-[470px] uws:h-[650px]"
+        /> */}
+         <div className="relative w-full h-[240px] md:h-[453px] lg:h-[453px] uws:h-[700px] z-10 md:-mt-0 -mt-2 ">
+        <Image
+          alt="home"
+          src={courseBanner}
+          fill
+          quality={95}
+          className="object-cover"
         />
-
-        <div className="w-11/12 mx-auto md:w-5/6 py-12">
+        <div className="absolute inset-0 bg-black bg-opacity-70" />
+      </div>
+        <div className="w-11/12 mx-auto md:w-5/6 py-12 ">
           <div className="flex lg:flex-row exl:flex-row uws:flex-row md:flex-col sm:flex-col xs:flex-col gap-8 justify-center items-end -mt-36 lg:-mt-48">
-            <div className="w-[250px] xs:w-full md:w-[300px] lg:w-[450px] lg:h-[600px] uws:w-[800px] uws:h-[970px] h-auto pb-8 border-b-4 border-red-600 mx-auto">
+            <div className="w-[250px] xs:w-full md:w-[300px] lg:w-[450px] lg:h-[600px] uws:w-[800px] uws:h-[970px] h-auto pb-8 border-b-4 border-red-600 mx-auto z-30">
               <div className="bg-black border-2 border-white rounded-[18px] px-4 py-8">
                 {course?.ximage ? (
                   <div className="h-auto  lg:h-[500px] uws:h-[850px] ">

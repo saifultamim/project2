@@ -76,16 +76,26 @@ export default function SuccessStory() {
           </div>
         ))}
       </div> */}
-      <Image
+      {/* <Image
         alt="success_story"
         src={mentors_header}
         width={1000}
         height={200}
         quality={95}
         className="w-full h-[240px] md:h-[400px] lg:h-[453px] uws:h-[650px]"
-      />
-        <div className="absolute  text-[35px] md:text-[60px] lg:text-[60px] regularBrush text-center w-full -mt-32 md:-mt-60 lg:-mt-72 text-white">
-        <p className="">mentors</p>
+      /> */}
+      <div className="relative w-full h-[240px] md:h-[453px] lg:h-[453px] uws:h-[700px] -z-10 md:-mt-0 -mt-2">
+        <Image
+          alt="home"
+          src={mentors_header}
+          fill
+          quality={95}
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+      </div>
+      <div className="absolute  text-[35px] md:text-[60px] lg:text-[60px] regularBrush text-center w-full -mt-32 md:-mt-60 lg:-mt-72 text-white">
+        <p className="">Success Story</p>
       </div>
       <div className="flex justify-center items-center mt-16 px-4">
         <Link

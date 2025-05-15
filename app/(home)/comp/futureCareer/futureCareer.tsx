@@ -4,7 +4,7 @@ import React from "react";
 const FutureCareer = () => {
   return (
     // <div className=" mt-12 mb-24   md:mt-36 lg:mt-32 lg:mb-44   uws:mt-72 w-5/6 lg:w-[986px] uws:w-[1500px]  mx-auto text-center border border-black">
-    <div className=" mt-16 mb-24   md:mt-36 lg:mt-32 lg:mb-44   uws:mt-48 w-5/6 md:w-4/6   mx-auto text-center">
+    <div className=" mt-16 mb-24   md:mt-36 lg:mt-40 lg:mb-44   uws:mt-48 w-5/6 md:w-4/6   mx-auto text-center">
       <Image
         alt="logo"
         src="/images/home/brand.png"

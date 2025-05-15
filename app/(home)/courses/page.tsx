@@ -25,7 +25,7 @@ const page = async () => {
           quality={95}
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+        <div className="absolute inset-0 bg-black bg-opacity-70 z-10" />
       </div>
       <div className="absolute  text-[35px] md:text-[60px] lg:text-[60px] regularBrush text-center w-full -mt-32 md:-mt-56 lg:-mt-72 uws:-mt-96 text-white">
         <p className="">Who We Offer</p>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import news_letter from '@/public/images/home/news_letter/news_letter.png'
+import career from '@/public/images/home/career.png'
 import Link from 'next/link';
 
 
@@ -71,14 +71,24 @@ export const news_letter_data = [
 const page = () => {
     return (
         <div className="relative mx-auto">
-        <Image
+        {/* <Image
                 alt='success_story' 
                 src={news_letter}
                 width={1000} 
                 height={200} 
                quality={95}
                 className='w-full h-[240px] md:h-[370px] lg:h-[453px] uws:h-[600px]' 
-            />
+            /> */}
+                <div className="relative w-full h-[240px] md:h-[453px] lg:h-[453px] uws:h-[700px] -z-10 md:-mt-0 -mt-2">
+              <Image
+                alt="home"
+                src={career}
+                fill
+                quality={95}
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-70 z-10" />
+            </div>
             <div className='absolute  text-[35px] md:text-[60px] lg:text-[60px] regularBrush text-center w-full -mt-32 md:-mt-60 lg:-mt-72 text-white'>
                <p className="">career</p>
                 </div>
